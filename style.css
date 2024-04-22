@@ -9,16 +9,17 @@ body {
     padding: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #858383;
+    background-color: #ffffff;
     align-items: center;
     justify-content: center;
     display: flex;
+    transform: scale(0.75);
 }
 
 .container {
     width: 98%;
     height: 98%;
-    background: #a13d3d;
+    background: #ffffff;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -111,6 +112,13 @@ p {
     box-shadow: inset 0 0 50px 10px #b300fa;
 }
 
+.btn.active{
+    border-radius: 60px 20px;
+    transform: scale(1.05);
+    border: solid 4px #b300fa;
+    box-shadow: inset 0 0 50px 10px #b300fa;
+}
+
 .input {
     display: grid;
     grid-template-rows: 0.67fr 1fr 1fr;
@@ -154,4 +162,31 @@ p {
 #btn10,
 #btn11 {
     height: 21%;
+}
+
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+input:focus:-moz-placeholder {
+    color: transparent;
+}
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+#state::placeholder {
+    color: #000000;
+    font-size: 50px;
+}
+#inputs::placeholder {
+    color: #000000;
+    font-size: 50px;
 }
