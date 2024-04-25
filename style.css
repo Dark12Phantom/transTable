@@ -26,6 +26,56 @@ body {
     justify-content: center;
 }
 
+#combo {
+    background-image: linear-gradient(to right, #c300ff, #1900ff);
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    font-size: 200%;
+    border-radius: 30px;
+    border: #b300fa 4px solid;
+    width: 25%;
+    color: white;
+}
+
+.opt {
+    font-size: 50%;
+    text-align: center;
+    width: 10%;
+}
+
+#opt1 {
+    color: white;
+    background: #949494;
+}
+
+#opt2 {
+    color: black;
+}
+
+#opt3 {
+    color: white;
+    background: #636363;
+}
+
+#opt4 {
+    color: black;
+}
+
+#opt5 {
+    color: white;
+    background: #636363;
+}
+
+#opt6 {
+    color: black;
+}
+
+#opt7 {
+    color: white;
+    background: #636363;
+}
+
 .wrapper {
     width: 99%;
     height: 99%;
@@ -63,6 +113,13 @@ body {
 
     grid-row-end: 2;
     grid-column-end: 2;
+}
+
+#state.styling,
+#inputs.styling {
+    font-size: 210%;
+    font-weight: bold;
+    color: blue;
 }
 
 #btn1 {
@@ -112,17 +169,69 @@ p {
     box-shadow: inset 0 0 50px 10px #b300fa;
 }
 
-.btn.active{
+.btn.active {
     border-radius: 60px 20px;
     transform: scale(1.05);
     border: solid 4px #b300fa;
-    box-shadow: inset 0 0 50px 10px #b300fa;
+    box-shadow: 0 0 50px 10px #b300fa;
 }
-.btn.active2{
+
+.btn.activex {
+    border-radius: 60px 20px;
+    transform: scale(1.05);
+    border: solid 4px #b300fa;
+    box-shadow: 0 0 50px 10px #b300fa;
+}
+
+.btn.activey {
+    border-radius: 60px 20px;
+    transform: scale(1.05);
+    border: solid 4px #b300fa;
+    box-shadow: 0 0 50px 10px #b300fa;
+}
+
+.btn.activez {
+    border-radius: 60px 20px;
+    transform: scale(1.05);
+    border: solid 4px #b300fa;
+    box-shadow: 0 0 50px 10px #b300fa;
+}
+
+.btn.active2 {
     border-radius: 60px 20px;
     transform: scale(1.05);
     border: solid 4px #fae100;
     box-shadow: inset 0 0 50px 10px #fae100;
+}
+
+.btn.active3 {
+    border-radius: 60px 20px;
+    transform: scale(1.05);
+    border: solid 4px #fae100;
+    box-shadow: inset 0 0 50px 10px #fae100, 0 0 50px 10px #b300fa;
+}
+
+.btn.active31 {
+    border-radius: 60px 20px;
+    transform: scale(1.05);
+    border: solid 4px #fae100;
+    box-shadow: inset 0 0 50px 10px #fae100, 0 0 50px 10px #2afa00;
+}
+
+.btn.active4 {
+    border-radius: 60px 20px;
+    transform: scale(1.05);
+    border: solid 4px #fae100;
+    box-shadow: inset 0 0 50px 10px #fae100,
+        0 0 50px 10px #b300fa;
+}
+
+.btn.active41 {
+    border-radius: 60px 20px;
+    transform: scale(1.05);
+    border: solid 4px #fae100;
+    box-shadow: inset 0 0 50px 10px #fae100,
+        0 0 50px 10px #2afa00;
 }
 
 .input {
@@ -178,12 +287,15 @@ input:focus::placeholder {
 input:focus::-webkit-input-placeholder {
     color: transparent;
 }
+
 input:focus:-moz-placeholder {
     color: transparent;
 }
+
 input:focus::-moz-placeholder {
     color: transparent;
 }
+
 input:focus:-ms-input-placeholder {
     color: transparent;
 }
@@ -192,6 +304,7 @@ input:focus:-ms-input-placeholder {
     color: #000000;
     font-size: 50px;
 }
+
 #inputs::placeholder {
     color: #000000;
     font-size: 50px;
